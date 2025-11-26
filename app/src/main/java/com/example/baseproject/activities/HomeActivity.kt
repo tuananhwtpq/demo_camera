@@ -41,10 +41,6 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(ActivityHomeBinding::infl
             }
         }
 
-    private var mCamera: Camera? = null
-
-    private lateinit var imageView: ImageView
-
     companion object {
         private const val PICK_IMAGE = 1
         private const val REQUEST_IMAGE_CAPTURE = 2
@@ -104,7 +100,6 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(ActivityHomeBinding::infl
             if (result.resultCode == RESULT_OK) {
                 val data: Intent? = result.data
                 val imageBitmap = data?.extras?.get("data") as Bitmap
-                imageView.setImageBitmap(imageBitmap)
             }
         }
 
@@ -131,10 +126,9 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(ActivityHomeBinding::infl
 
     }
 
-    //mm
     private fun progressImage(image: Uri){
         try {
-            val intent = Intent(this, CameraActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("image", image.toString())
             startActivity(intent)
         } catch (e: Exception){
