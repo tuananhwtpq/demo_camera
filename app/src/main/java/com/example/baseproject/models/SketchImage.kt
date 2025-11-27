@@ -1,4 +1,4 @@
-package com.example.baseproject.activities
+package com.example.baseproject.models
 
 import android.graphics.Bitmap
 import android.graphics.Color

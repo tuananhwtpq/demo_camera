@@ -1,11 +1,7 @@
 package com.example.baseproject.activities
 
 import android.content.Intent
-import android.os.Build
-import android.window.OnBackInvokedCallback
 import androidx.activity.OnBackPressedCallback
-import androidx.activity.addCallback
-import androidx.annotation.RequiresApi
 import androidx.viewpager2.widget.ViewPager2
 import com.example.baseproject.adapters.IntroViewPagerAdapter
 import com.example.baseproject.bases.BaseActivity

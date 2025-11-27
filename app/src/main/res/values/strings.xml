@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Base Project</string>
+    <string name="app_name" translatable="false">FlowARt: AR Drawing Sketch Art</string>
 
     <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="fb_app_id" translatable="false"></string>
@@ -33,6 +33,24 @@
     <string name="message_intro_1">It has never been easier to become an animator with simple approach</string>
     <string name="message_intro_2">Create animation in your own unique manner with basic drawings</string>
     <string name="message_intro_3">Create animation by drawing a line with your finger.</string>
+    <string name="home">Home</string>
+    <string name="lesson">Lesson</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flowart_ar_drawing_sketch_art">FlowARt: AR Drawing Sketch Art</string>
+    <string name="what_will_you_explore_today">What will you explore today?</string>
+    <string name="your_drawing_journey">Your Drawing Journey</string>
+    <string name="let_s_tune_tour_app">Let’s Tune Tour App</string>
+    <string name="beginner">Beginner</string>
+    <string name="learn_the_basics_step_by_step">Learn the basics step-by-step</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="enhance_your_style_and_techniques">Enhance your style and techniques</string>
+    <string name="professional">Professional</string>
+    <string name="master_advanced_and_creative_skills">Master advanced and creative skills</string>
+    <string name="see_all">See all</string>
+    <string name="chibi">Chibi</string>
+    <string name="library">Library</string>
+    <string name="cartoon">Cartoon</string>
 
 
 </resources>

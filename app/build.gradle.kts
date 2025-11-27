@@ -5,16 +5,18 @@ import java.text.SimpleDateFormat
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-parcelize")
+    id("com.google.devtools.ksp")
 }
 
 android {
     namespace = "com.example.baseproject"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.baseproject"
         minSdk = 29
-        targetSdk = 35
+        targetSdk = 36
 //        versionCode = 100
 //        versionName = "1.0.0"
 
@@ -57,6 +59,13 @@ android {
             enableSplit = false
         }
     }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+    ndkVersion = "29.0.14206865"
 }
 
 dependencies {
@@ -82,8 +91,11 @@ dependencies {
     implementation(libs.gson)
     implementation(project(":openCV"))  // OpenCV dependency
 
-    implementation("androidx.activity:activity-ktx:1.8.0")
-    implementation("androidx.fragment:fragment-ktx:1.6.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 
 }

@@ -23,7 +23,7 @@
 //import java.text.SimpleDateFormat
 //import java.util.Date
 //
-//class HomeActivity : AppCompatActivity() {
+//class TestingHomeActivity : AppCompatActivity() {
 //
 //    private var photoUri: Uri? = null
 //
@@ -89,13 +89,13 @@
 //
 //            if (file != null) {
 //                photoUri = FileProvider.getUriForFile(
-//                    this@HomeActivity,
+//                    this@TestingHomeActivity,
 //                    "${applicationContext.packageName}.fileprovider",
 //                    file
 //                )
 //                takePictureLauncher.launch(photoUri)
 //            } else {
-//                Toast.makeText(this@HomeActivity, "Unable to create image file", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@TestingHomeActivity, "Unable to create image file", Toast.LENGTH_SHORT).show()
 //            }
 //        }
 //    }
@@ -109,14 +109,14 @@
 //
 //    private fun processImage(imageUri: Uri) {
 //        // Kotlin 'apply' pattern cho Intent
-//        Intent(this, MainActivity::class.java).apply {
+//        Intent(this, TestingActivity::class.java).apply {
 //            putExtra("imageUri", imageUri.toString())
 //            startActivity(this)
 //        }
 //    }
 //
 //    companion object {
-//        private const val TAG = "HomeActivity"
+//        private const val TAG = "TestingHomeActivity"
 //    }
 //}
 //
@@ -151,7 +151,7 @@
 //import java.io.FileOutputStream
 //import java.io.IOException
 //
-//class MainActivity : AppCompatActivity() {
+//class TestingActivity : AppCompatActivity() {
 //
 //    // Sử dụng lateinit để tránh null check liên tục
 //    private lateinit var targetImageView: ImageView
@@ -337,11 +337,11 @@
 //
 //        withContext(Dispatchers.Main) {
 //            val msg = if (success) "Image saved to Gallery" else "Failed to save image"
-//            Toast.makeText(this@MainActivity, msg, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this@TestingActivity, msg, Toast.LENGTH_SHORT).show()
 //        }
 //    }
 //
 //    companion object {
-//        private val TAG = MainActivity::class.java.simpleName
+//        private val TAG = TestingActivity::class.java.simpleName
 //    }
 //}

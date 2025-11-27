@@ -13,4 +13,17 @@
     <color name="centerColor">#C86BF8</color>
     <color name="endColor">#F0997F</color>
     <color name="red">#F2420A</color>
+    <color name="mainBackground">#FEF7EE</color>
+    <color name="mainTextColor">#762D16</color>
+    <color name="mainNavBg">#F4F1EB</color>
+    <color name="unSelectedText">#B79E9B</color>
+    <color name="primary">#FFC247</color>
+    <color name="brown">#C69B53</color>
+    <color name="light_green">#FFFCEB</color>
+    <color name="lesson_text_color">#DB8633</color>
+    <color name="lesson_unser_text_color">#85655B</color>
+    <color name="custom_snackbar_border">#D1A569</color>
+    <color name="snackbar_fill_color">#C6CE73</color>
+    <color name="see_all_color">#DC893A</color>
+
 </resources>
