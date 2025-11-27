@@ -68,8 +68,9 @@
         android:id="@+id/hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/simpleSeekBar"
+        app:layout_constraintBottom_toBottomOf="@id/percentText"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
@@ -77,25 +78,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvOriginToGray"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/custom_linear_bg"
-                android:ellipsize="marquee"
-                android:gravity="center"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:singleLine="true"
-                android:text="Origin to Gray"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_origin_to_gray"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Origin to Gray"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
 
+<!--            Giu-->
             <TextView
-                android:id="@+id/tvOriginToSketch"
+                android:id="@+id/tv_origin_to_sket"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
@@ -111,42 +113,60 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvOriginToColorSket"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/custom_linear_bg"
-                android:ellipsize="marquee"
-                android:gravity="center"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:singleLine="true"
-                android:text="Origin to Colored Sketch"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_origin_to_colored_sketch"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Origin to Colored Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
 
-            <TextView
-                android:id="@+id/tvOriginToSoftSket"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/custom_linear_bg"
-                android:ellipsize="marquee"
-                android:gravity="center"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:singleLine="true"
-                android:text="Origin to Soft Sketch"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_origin_to_soft_sket"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Origin to Soft Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
 
+<!--            <TextView-->
+<!--                android:id="@+id/tv_origin_to_soft_colored_sket"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Origin to Soft Colored Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            Giu-->
             <TextView
-                android:id="@+id/tvGrayToSket"
+                android:id="@+id/tv_gray_to_sket"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
@@ -162,25 +182,26 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvGrayToColor_Sket"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/custom_linear_bg"
-                android:ellipsize="marquee"
-                android:gravity="center"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:singleLine="true"
-                android:text="Gray to Color Sketch"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_gray_to_color_sket"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Gray to Color Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
 
+<!--            Giu-->
             <TextView
-                android:id="@+id/tvGrayToSoftSket"
+                android:id="@+id/tv_gray_to_soft_sket"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
@@ -196,25 +217,43 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvGrayToSoftColorSket"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/custom_linear_bg"
-                android:ellipsize="marquee"
-                android:gravity="center"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:singleLine="true"
-                android:text="Gray to Soft Color Sketch"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_gray_to_soft_color_sket"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Gray to Soft Color Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
 
+<!--            <TextView-->
+<!--                android:id="@+id/tv_sket_to_color_sket"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/custom_linear_bg"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:gravity="center"-->
+<!--                android:marqueeRepeatLimit="marquee_forever"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Sketch to Color Sketch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            Giu-->
             <TextView
-                android:id="@+id/tvSketToColorSket"
+                android:id="@+id/tv_stroke_only"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
@@ -226,13 +265,25 @@
                 android:paddingHorizontal="16dp"
                 android:paddingVertical="8dp"
                 android:singleLine="true"
-                android:text="Sketch to color Sketch"
+                android:text="Stroke Only"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentText"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="20 %"
+        app:layout_constraintBottom_toTopOf="@id/simpleSeekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"/>
 
     <SeekBar
         android:id="@+id/simpleSeekBar"

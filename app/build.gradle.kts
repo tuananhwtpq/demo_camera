@@ -82,4 +82,8 @@ dependencies {
     implementation(libs.gson)
     implementation(project(":openCV"))  // OpenCV dependency
 
+    implementation("androidx.activity:activity-ktx:1.8.0")
+    implementation("androidx.fragment:fragment-ktx:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
 }
