@@ -3,6 +3,7 @@ package com.example.baseproject.utils
 import android.app.Activity
 import android.view.View
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 
 fun View.gone() {
     visibility = View.GONE
@@ -26,4 +27,8 @@ fun View.setOnUnDoubleClick(interval: Long = 500L, onViewClick: (View?) -> Unit)
 
 fun Activity.showToast(message: String){
     Toast.makeText(this, message, Toast.LENGTH_SHORT ).show()
+}
+
+fun Fragment.showToast(message: String){
+    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT ).show()
 }

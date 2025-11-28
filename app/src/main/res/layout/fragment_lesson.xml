@@ -79,7 +79,7 @@
                     android:includeFontPadding="false"
                     android:textColor="@color/lesson_unser_text_color"
                     android:textSize="14sp"
-                    tools:text="0/10" />
+                    android:text="0/10" />
 
             </LinearLayout>
 
@@ -159,7 +159,7 @@
                     android:includeFontPadding="false"
                     android:textColor="@color/lesson_unser_text_color"
                     android:textSize="14sp"
-                    tools:text="0/10" />
+                    android:text="0/10" />
 
             </LinearLayout>
 
@@ -231,7 +231,7 @@
                     android:includeFontPadding="false"
                     android:textColor="@color/lesson_unser_text_color"
                     android:textSize="14sp"
-                    tools:text="0/10" />
+                    android:text="0/10" />
 
             </LinearLayout>
 

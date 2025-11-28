@@ -90,6 +90,7 @@ dependencies {
 
     implementation(libs.gson)
     implementation(project(":openCV"))  // OpenCV dependency
+    implementation(project(":drawingview"))
 
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.fragment.ktx)

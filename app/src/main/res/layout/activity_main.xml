@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/mainBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBackground"
     android:layoutDirection="ltr"
     tools:context=".activities.MainActivity">
 
@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="56dp"
-        android:padding="8dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -60,57 +59,123 @@
         app:layout_constraintBottom_toTopOf="@id/viewLine"
         app:layout_goneMarginBottom="0dp">
 
-        <TextView
-            android:id="@+id/navHome"
+        <FrameLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:gravity="center"
-            android:paddingVertical="10dp"
-            android:text="@string/home"
-            style="@style/mMeta.m1"
-            android:textColor="@color/mainTextColor"
-            app:drawableTopCompat="@drawable/selector_home" />
+            android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/navLesson"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:gravity="center"
-            style="@style/mMeta.m1"
-            android:paddingVertical="10dp"
-            android:text="@string/lesson"
-            android:textColor="@color/unSelectedText"
-            app:drawableTopCompat="@drawable/selector_lesson" />
+            <ImageView
+                android:id="@+id/bottom_nav_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/bottom_nav_bg"
+                app:layout_constraintBottom_toBottomOf="@id/navHome" />
 
-        <TextView
-            android:id="@+id/navGallery"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:gravity="center"
-            android:paddingVertical="10dp"
-            android:text="Gallery"
-            style="@style/mMeta.m1"
-            android:textColor="@color/unSelectedText"
-            app:drawableTopCompat="@drawable/selector_gallery" />
+            <TextView
+                android:id="@+id/navHome"
+                style="@style/mMeta.m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="@string/home"
+                android:textColor="@color/mainTextColor"
+                app:drawableTopCompat="@drawable/selector_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/navSetting"
+        </FrameLayout>
+
+
+        <FrameLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:gravity="center"
-            style="@style/mMeta.m1"
-            android:paddingVertical="10dp"
-            android:text="Setting"
-            android:textColor="@color/unSelectedText"
-            app:drawableTopCompat="@drawable/selector_setting" />
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bottom_nav_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/bottom_nav_lesson"
+                app:layout_constraintBottom_toBottomOf="@id/navHome" />
+
+            <TextView
+                android:id="@+id/navLesson"
+                style="@style/mMeta.m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="@string/lesson"
+                android:textColor="@color/unSelectedText"
+                app:drawableTopCompat="@drawable/selector_lesson" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bottom_nav_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/bottom_nav_lesson"
+                app:layout_constraintBottom_toBottomOf="@id/navHome" />
+
+            <TextView
+                android:id="@+id/navGallery"
+                style="@style/mMeta.m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="Gallery"
+                android:textColor="@color/unSelectedText"
+                app:drawableTopCompat="@drawable/selector_gallery" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bottom_nav_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/bottom_nav_lesson"
+                app:layout_constraintBottom_toBottomOf="@id/navHome" />
+
+            <TextView
+                android:id="@+id/navSetting"
+                style="@style/mMeta.m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="Setting"
+                android:textColor="@color/unSelectedText"
+                app:drawableTopCompat="@drawable/selector_setting" />
+        </FrameLayout>
+
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -119,9 +184,9 @@
         android:layout_height="0dp"
         android:clickable="true"
         android:visibility="gone"
-        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@id/vpMain"
-        app:layout_constraintTop_toTopOf="@id/vpMain">
+        app:layout_constraintTop_toTopOf="@id/vpMain"
+        tools:visibility="visible">
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
             android:layout_width="wrap_content"

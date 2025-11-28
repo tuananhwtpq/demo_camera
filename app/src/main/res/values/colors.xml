@@ -25,5 +25,6 @@
     <color name="custom_snackbar_border">#D1A569</color>
     <color name="snackbar_fill_color">#C6CE73</color>
     <color name="see_all_color">#DC893A</color>
+    <color name="empty_box_color">#9E8478</color>
 
 </resources>

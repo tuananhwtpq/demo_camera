@@ -1,6 +1,7 @@
 package com.example.baseproject.activities
 
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -71,6 +72,15 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         setSelectedText(binding.navLesson)
         setSelectedText(binding.navGallery)
         setSelectedText(binding.navSetting)
+
+        binding.bottomNavHome.visibility = if (position == 0) View.VISIBLE else View.INVISIBLE
+        binding.bottomNavLesson.visibility = if (position == 1) View.VISIBLE else View.INVISIBLE
+        binding.bottomNavGallery.visibility = if (position == 2) View.VISIBLE else View.INVISIBLE
+        binding.bottomNavSetting.visibility = if (position == 3) View.VISIBLE else View.INVISIBLE
+    }
+
+    private fun bottomNavSelected(isSelected: Boolean){
+
     }
 
     private fun setSelectedText(textView: TextView){

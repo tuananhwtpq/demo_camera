@@ -51,6 +51,13 @@
     <string name="chibi">Chibi</string>
     <string name="library">Library</string>
     <string name="cartoon">Cartoon</string>
+    <string name="trending">Trending</string>
+    <string name="recent">Recent</string>
+    <string name="anime">Anime</string>
+    <string name="animal">Animal</string>
+    <string name="flower">Flower</string>
+    <string name="sketch">Sketch</string>
+    <string name="trace">Trace</string>
 
 
 </resources>
